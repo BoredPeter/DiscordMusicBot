@@ -1,0 +1,26 @@
+{
+  "name": "discordmusicbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BoredPeter/DiscordMusicBot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BoredPeter/DiscordMusicBot/issues"
+  },
+  "homepage": "https://github.com/BoredPeter/DiscordMusicBot#readme",
+  "dependencies": {
+    "discord.js": "^11.2.1",
+    "ffmpeg-binaries": "^3.2.2-3",
+    "node-opus": "^0.2.7",
+    "ytdl-core": "^0.17.1"
+  }
+}
