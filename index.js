@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const config = require('./config.json');
 const ytdl = require('ytdl-core');
+const request = require('request');
 var client = new Discord.Client();
 
 let dispatcher, targetChannel;
@@ -15,7 +16,10 @@ client.on('ready', () => {
         targetChannel.join().then((connection) => {
             console.log('Voice channel join successful.');
             const stream = ytdl(config.youtubeUrl, {filter : 'audioonly'});
+            // const stream = request('https://s61.podbean.com/pb/cb5349bba1586d12636ed128128026a1/59bf4028/data1/fs3/988635/uploads/EP1Fixed.mp3');
             dispatcher = connection.playStream(stream);
+            // dispatcher = connection.playFile('./EP1Fixed.mp3');
+            dispatcher.setVolume(1);
             console.log('Playing youtube');
 
         }).catch(console.error);
