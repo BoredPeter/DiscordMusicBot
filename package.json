@@ -23,6 +23,7 @@
     "lodash": "^4.17.4",
     "node-opus": "^0.2.7",
     "request": "^2.81.0",
+    "youtube-search": "^1.0.10",
     "ytdl-core": "^0.17.1"
   }
 }
