@@ -1,9 +1,9 @@
+const MusicPlayer = require('../MusicPlayer');
 
+let musicPlayer = new MusicPlayer();
 
 module.exports = {
     handler: function (args, msg, client, state) {
-        if(state.dispatcher && state.dispatcher.resume) {
-            state.dispatcher.resume();
-        }
+        musicPlayer.resume();
     }
 }

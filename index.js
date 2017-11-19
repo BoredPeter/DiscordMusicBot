@@ -2,7 +2,10 @@ const Discord = require('discord.js');
 const config = require('./config.json');
 const _ = require('lodash');
 const commands = require('./commands');
-var client = new Discord.Client();
+const MusicPlayer = require('./MusicPlayer');
+
+let client = new Discord.Client();
+let musicPlayer = new MusicPlayer(client);
 
 let state = {
 

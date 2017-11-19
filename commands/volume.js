@@ -1,5 +1,9 @@
 const _ = require('lodash');
 
+const MusicPlayer = require('../MusicPlayer');
+
+let musicPlayer = new MusicPlayer();
+
 module.exports = {
     handler: function (args, msg, client, state) {
         if(msg.author.id === '168562692376756224') { //hank
@@ -8,8 +12,7 @@ module.exports = {
         if(args && args.length === 1) {
             let volume = parseFloat(args[0]);
             if(_.isFinite(volume)) {
-                state.dispatcher.setVolume(volume);
-                state.volume = volume;
+                musicPlayer.setVolume(volume);
             } else {
                 // msg.reply('Volume must be a number');
             }

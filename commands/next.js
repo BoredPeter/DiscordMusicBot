@@ -4,6 +4,6 @@ let musicPlayer = new MusicPlayer();
 
 module.exports = {
     handler: function (args, msg, client, state) {
-        musicPlayer.stop();
+        musicPlayer.next();
     }
 }

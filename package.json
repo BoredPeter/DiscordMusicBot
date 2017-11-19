@@ -18,11 +18,13 @@
   },
   "homepage": "https://github.com/BoredPeter/DiscordMusicBot#readme",
   "dependencies": {
+    "crypto": "^1.0.1",
     "discord.js": "^11.2.1",
     "ffmpeg-binaries": "^3.2.2-3",
     "lodash": "^4.17.4",
     "node-opus": "^0.2.7",
     "request": "^2.81.0",
+    "youtube-dl": "^1.12.2",
     "youtube-search": "^1.0.10",
     "ytdl-core": "^0.17.1"
   }
